@@ -29,4 +29,9 @@ TextStyle getLightStyle(
 TextStyle getBoldStyle(
     {double fontSize = FontSize.s12, required Color color}){
   return _getTextStyle(fontSize, ManagerFontWeight.bold, color);
+
+  //semi bold style
+}TextStyle getSemiBoldStyle(
+    {double fontSize = FontSize.s12, required Color color}){
+  return _getTextStyle(fontSize, ManagerFontWeight.semiBold, color);
 }
