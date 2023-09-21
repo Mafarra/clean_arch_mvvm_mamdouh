@@ -1,5 +1,6 @@
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_font.dart';
 import 'package:flutter/material.dart';
+
+import 'manager_font.dart';
 
 TextStyle _getTextStyle(double fontSize, FontWeight fontWeight, Color color) {
   return TextStyle(

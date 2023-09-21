@@ -1,8 +1,8 @@
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_color.dart';
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_font.dart';
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_styles.dart';
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_value.dart';
 import 'package:flutter/material.dart';
+import 'manager_color.dart';
+import 'manager_font.dart';
+import 'manager_styles.dart';
+import 'manager_value.dart';
 
 ThemeData getApplicationTheme() {
   return ThemeData(

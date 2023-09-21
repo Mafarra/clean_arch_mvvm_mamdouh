@@ -1,5 +1,10 @@
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_strings.dart';
 import 'package:flutter/material.dart';
+
+import '../forgot_password/frogot_password.dart';
+import '../login/login_view.dart';
+import '../main/main_view.dart';
+import '../register/register_view.dart';
+import 'manager_strings.dart';
 
 class Routes{
   static const String splashRoute = "/";
@@ -12,16 +17,16 @@ class Routes{
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.splashRoute:
+      // case Routes.splashRoute:
       //   return MaterialPageRoute(builder: (_) => const SplashView());
-      // case Routes.loginRoute:
-      //   return MaterialPageRoute(builder: (_) => const LoginView());
-      // case Routes.registerRoute:
-      //   return MaterialPageRoute(builder: (_) => const RegisterView());
-      // case Routes.forgotPasswordRoute:
-      //   return MaterialPageRoute(builder: (_) => const ForgotPasswordView());
-      // case Routes.mainRoute:
-      //   return MaterialPageRoute(builder: (_) => const MainView());
+      case Routes.loginRoute:
+        return MaterialPageRoute(builder: (_) => const LoginView());
+      case Routes.registerRoute:
+        return MaterialPageRoute(builder: (_) => const RegisterView());
+      case Routes.forgotPasswordRoute:
+        return MaterialPageRoute(builder: (_) => const ForgotPasswordView());
+      case Routes.mainRoute:
+        return MaterialPageRoute(builder: (_) => const MainView());
       // case Routes.storeDetailsRoute:
       //   return MaterialPageRoute(builder: (_) => const StoreDetailsView());
       default:
