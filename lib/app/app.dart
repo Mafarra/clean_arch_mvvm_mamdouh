@@ -1,6 +1,5 @@
-import 'package:clean_arch_mvvm_mamdouh/presentaion/manager_theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../presentation/resources/manager_theme.dart';
 
 class MyApp extends StatefulWidget {
   int appState = 0;
