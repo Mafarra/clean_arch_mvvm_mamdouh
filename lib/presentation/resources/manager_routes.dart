@@ -4,6 +4,7 @@ import '../forgot_password/frogot_password.dart';
 import '../login/login_view.dart';
 import '../main/main_view.dart';
 import '../register/register_view.dart';
+import '../splash/splash_view.dart';
 import 'manager_strings.dart';
 
 class Routes{
@@ -17,8 +18,8 @@ class Routes{
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
-      // case Routes.splashRoute:
-      //   return MaterialPageRoute(builder: (_) => const SplashView());
+      case Routes.splashRoute:
+        return MaterialPageRoute(builder: (_) => const SplashView());
       case Routes.loginRoute:
         return MaterialPageRoute(builder: (_) => const LoginView());
       case Routes.registerRoute:
