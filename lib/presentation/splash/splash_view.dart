@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:clean_arch_mvvm_mamdouh/presentation/resources/manager_constants.dart';
 import 'package:flutter/material.dart';
 import '../resources/manager_assets.dart';
 import '../resources/manager_color.dart';
@@ -15,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
   Timer? _timer;
 
   _startDelay(){
-    _timer = Timer(const Duration(seconds: 3),_goNext);
+    _timer = Timer(const Duration(seconds: AppConstants.splashDelay),_goNext);
   }
   _goNext(){
     Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
