@@ -67,7 +67,7 @@ ThemeData getApplicationTheme() {
     inputDecorationTheme: InputDecorationTheme(
       //content padding
       contentPadding: const EdgeInsets.all(AppPadding.p8),
-      //hint styhle
+      //hint style
       hintStyle:
           getRegularStyle(color: ManagerColor.grey, fontSize: FontSize.s14),
       labelStyle:
